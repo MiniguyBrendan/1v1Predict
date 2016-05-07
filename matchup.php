@@ -280,6 +280,14 @@ function summ($summonerUnformatted, $server, $isSummA){
     
     //THIS SECTION IS COPY/PASTED FOR EACH CHART, WITH MODIFICATIONS AS NEEDED
     
+    // summoner name
+    
+    echo '<div class="contentLayerOne"><div class="summonerName">';
+    
+    echo '<p style="display: none;">' . $summonerUnformatted . '</p>';
+    
+    echo '</div></div>';
+    
     //champ image
     
     echo '<img class="img-circle layerOne left" src="http://ddragon.leagueoflegends.com/cdn/' . $currentVersion . '/img/champion/' . $championKey . '.png" style="display: none;"/>';
@@ -386,6 +394,14 @@ function summ($summonerUnformatted, $server, $isSummA){
   else {
     
     //summoner B, output accordingly
+    
+    //summoner name
+    
+    echo '<div class="contentLayerOne"><div class="summonerTwoName">';
+    
+    echo '<p style="display: none;">' . $summonerUnformatted . '</p>';
+    
+    echo '</div></div>';
     
     echo '<img class="img-circle layerOne right" src="http://ddragon.leagueoflegends.com/cdn/' . $currentVersion . '/img/champion/' . $championKey . '.png" style="display: none;"/>';
     
