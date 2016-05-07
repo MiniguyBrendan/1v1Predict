@@ -11,6 +11,7 @@ This prediction uses data on:
 * K/D/A
 * CS
 * Winrate
+* Rank
 
 ...but specifically uses the data for your most mastered champion.
 
