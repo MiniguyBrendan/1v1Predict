@@ -1,0 +1,9 @@
+body {
+  background-image: url("../img/amumu.jpg");
+  background-size: contain;
+}
+p {
+  font-family: "Courier New", "Courier", "monospace";
+  color: #fff;
+  font-size: 50;
+}

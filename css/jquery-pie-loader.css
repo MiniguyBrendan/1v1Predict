@@ -1,0 +1,381 @@
+/* 
+ *   jQuery Pie-Loader Plugin 0.1 + some addons by me!
+ *
+ *   Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/MIT
+ */
+
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url('../img/ViVsBlue.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*  Separate background overlays in case they need to be separated  */
+
+.faderCenterText {
+  position: fixed;
+  height: 100%;
+  width: 350px;
+  background: rgba(255, 255, 255, 0.5) top;
+  background-size: 400px 100%;
+  background-attachment: cover;
+  left: 50%;
+  margin-left: -175px;
+}
+
+.faderCenterImg {
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  background: rgba(255, 255, 255, 0.5) top;
+  background-size: 400px 100%;
+  background-attachment: cover;
+  left: 50%;
+  margin-left: -425px;
+}
+
+.faderCenterImgRight {
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  background: rgba(255, 255, 255, 0.5) top;
+  background-size: 400px 100%;
+  background-attachment: cover;
+  right: 50%;
+  margin-right: -425px;
+}
+
+.megaphoneLeft {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -375px;
+}
+
+.megaphoneRight {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  margin-right: -375px;
+}
+
+.content {
+  position:absolute;
+  width: 100%;
+  height: 200px;
+  top: 250px;
+  z-index: 2;
+}
+
+.contentLayerOne {
+  position:absolute;
+  width: 100%;
+  height: 200px;
+  top: 50px;
+  z-index: 2;
+}
+
+.contentLayerTwo {
+  position:absolute;
+  width: 100%;
+  height: 200px;
+  top: 500px;
+  z-index: 2;
+}
+
+.contentLayerThree {
+  position:absolute;
+  width: 100%;
+  height: 200px;
+  top: 750px;
+  z-index: 2;
+}
+
+.contentLayerFour {
+  position:absolute;
+  width: 100%;
+  height: 200px;
+  top: 1000px;
+  z-index: 2;
+}
+
+.contentLayerFive {
+  position:absolute;
+  width: 100%;
+  height: 200px;
+  top: 1250px;
+  z-index: 2;
+}
+
+.contentLayerOneAxe { /*  separate content layers for inital axes, best solution i could coome up with  */
+  position:absolute;
+  width: 100%;
+  height: 200px;
+  top: 50px;
+  z-index: 2;
+}
+
+.contentAxe {
+  position:absolute;
+  width: 100%;
+  height: 200px;
+  top: 250px;
+  z-index: 2;
+}
+
+.contentLayerTwoAxe {
+  position:absolute;
+  width: 100%;
+  height: 200px;
+  top: 500px;
+  z-index: 2;
+}
+
+.contentLayerThreeAxe {
+  position:absolute;
+  width: 100%;
+  height: 200px;
+  top: 750px;
+  z-index: 2;
+}
+
+.contentLayerFourAxe {
+  position:absolute;
+  width: 100%;
+  height: 200px;
+  top: 1000px;
+  z-index: 2;
+}
+
+.contentLayerFiveAxe {
+  position:absolute;
+  width: 100%;
+  height: 200px;
+  top: 1250px;
+  z-index: 2;
+}
+
+.textLayerLeft {
+  position: absolute;
+  top:80px;
+  left:50%;
+  margin-left: -315px;
+  z-index: 3;
+  font-weight: bold;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.textLayerRight {
+  position: absolute;
+  top:80px;
+  right:50%;
+  margin-right: -315px;
+  z-index: 3;
+  font-weight: bold;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.creepTextLayerLeft {
+  position: absolute;
+  top:50px;
+  left:50%;
+  margin-left: -245px;
+  z-index: 3;
+  font-weight: bold;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.creepTextLayerRight {
+  position: absolute;
+  top:50px;
+  right:50%;
+  margin-right: -245px;
+  z-index: 3;
+  font-weight: bold;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.rankTextLayerLeft {
+  position: absolute;
+  top:130px;
+  left:50%;
+  margin-left: -315px;
+  z-index: 3;
+  font-weight: bold;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.rankTextLayerRight {
+  position: absolute;
+  top:130px;
+  right:50%;
+  margin-right: -315px;
+  z-index: 3;
+  font-weight: bold;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.rankImageLeft {
+  position:absolute;
+  left:50%;
+  margin-left: -375px;
+  top:0;
+}
+
+.rankImageRight {
+  position:absolute;
+  right:50%;
+  margin-right: -375px;
+  top:0;
+}
+
+.creepScoreImageLeft {
+  position:absolute;
+  left: 50%;
+  margin-left: -375px;
+  top:0;
+}
+
+.creepScoreImageRight {
+  position: absolute;
+  right: 50%;
+  margin-right: -375px;
+  top:0;
+}
+
+.plusMinusSignLeft {
+  position: absolute;
+  left: 50%;
+  margin-left: -375px;
+  top: 0;
+}
+
+.plusMinusSignRight {
+  position: absolute;
+  right: 50%;
+  margin-right: -375px;
+  top: 0;
+}
+
+.img-circle {
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+}
+
+.img-circle.layerOne.left {
+  position:absolute;
+  left:50%;
+  margin-left: -375px;
+  top:250px;
+}
+
+.img-circle.layerOne.right {
+  position: absolute;
+  right:50%;
+  margin-right: -375px;
+  top:250px;
+}
+
+.centerLayer {
+  display: none;
+  position: relative;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 27;
+  color: #2e2e2e;
+  z-index: 6;
+}
+
+.centerLayerWinner {
+  position: relative;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 27;
+  color: #2e2e2e;
+  z-index: 6;
+}
+
+.summonerName {
+  position:absolute;
+  top:200px;
+  left:100px;
+}
+
+.summonerTwoName {
+  position:absolute;
+  top:200px;
+  right:100px;
+}
+
+.axe {
+  position:absolute;
+  top:0px;
+  left:50%;
+  margin-left: -375px;
+}
+.axeTwo {
+  position:absolute;
+  top:0px;
+  right:50%;
+  margin-right: -375px;
+}
+#summAWinrate {
+  position:absolute;
+  top:500px;
+  left:50%;
+  margin-left: -375px;
+}
+#summBWinrate {
+  position:absolute;
+  top:500px;
+  right:50%;
+  margin-right: -375px;
+}
+.svg-pie {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.svg-pie svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transform: rotate(-90deg);
+}
+.svg-pie .percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: Helvetica;
+  font-size: 2rem;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+.rendered.svg-pie {
+  background: none;
+}
+.rendered.svg-pie .percentage {
+  opacity: 1;
+}
+
+.svg-pie {
+  background: #354a5f;
+  box-shadow: none;
+}
+.svg-pie circle:nth-child(1) {
+  fill: #139f80;
+  stroke: #139f80;
+}
+.svg-pie circle:nth-child(2) {
+  fill: #16ab86;
+  stroke: #0d6854;
+}
+.svg-pie .percentage {
+  color: #ffffff;
+}
