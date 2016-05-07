@@ -101,4 +101,4 @@ Likewise, we can compare: `constant('Divisions::V') < constant('Divisions::III')
 
 #### Setup/Usage
 
-Setting this up on your own is very easy. After installing PHP, clone this repository. Place the repo files in a place that PHP can serve them. You'll also need to replace <API_KEY_HERE> with your actual API key from https://developer.riotgames.com in matchup.php. Everything else should work out of the box. All dependencies are included.
+Setting this up on your own is very easy. After installing PHP, clone this repository. Place the repo files in a place that PHP can serve them. You'll also need to replace `<API_KEY_HERE>` with your actual API key from https://developer.riotgames.com in matchup.php. Everything else should work out of the box. All dependencies are included.
