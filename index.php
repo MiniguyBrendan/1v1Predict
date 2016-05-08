@@ -61,11 +61,13 @@ document.getElementById('summOne').onkeydown = function(e){
 </div>
 </div>
 </div>
+<p id="footer">1v1 Predictor isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends &copy; Riot Games, Inc.</p>
 </body>
-</html>
-  
-<?php
 
-  
-  
+<?php 
+
+  //wow we didn't even need php for this page! I'll keep it in the PHP format for the sake of consistency.
+
 ?>
+
+</html>
