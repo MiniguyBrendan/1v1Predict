@@ -27,11 +27,11 @@ h1 {
 }
 
 #footer {
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 10%;
+    margin-right: 10%;
     font-family: Cabin;
     color: #747474;
-    font-size: 15;
+    font-size: 14;
     position: absolute;
     display: block;
     bottom: 0; /* this is necessary to keep the footer from appearing too high up. */
