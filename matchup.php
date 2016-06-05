@@ -44,13 +44,34 @@ function summoner_info_array_name($summoner) {
 }
 
 function summChampData($summId, $server) {
-  
-  $curl = curl_init('https://' . $server . '.api.pvp.net/championmastery/location/' . mb_strtoupper($server) . '1/player/' . $summId .'/topchampions' . '?api_key=<API_KEY_HERE>');
+
+  if($server == "lan") {
+    
+    $serverFix = "la1";
+    
+  }
+  else if($server == "las") {
+    
+    $serverFix = "la2";
+    
+  }
+  else if($server == "eune") {
+    
+    $serverFix = "eun1";
+    
+  }
+  //skip euw because no actual change is made (euw -> euw1)
+  else {
+    
+    $serverFix = $server . "1";
+    
+  }
+  $curl = curl_init('https://' . $server . '.api.pvp.net/championmastery/location/' . mb_strtoupper($serverFix) . '/player/' . $summId .'/topchampions' . '?api_key=7c9bb750-2c52-48c3-95d1-9d6d81a8e226');
   curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
   $result = curl_exec($curl);
   curl_close($curl);
   return $result;
-  
+
 }
 
 function summRankedData($summId, $server) {
