@@ -66,7 +66,7 @@ function summChampData($summId, $server) {
     $serverFix = $server . "1";
     
   }
-  $curl = curl_init('https://' . $server . '.api.pvp.net/championmastery/location/' . mb_strtoupper($serverFix) . '/player/' . $summId .'/topchampions' . '?api_key=7c9bb750-2c52-48c3-95d1-9d6d81a8e226');
+  $curl = curl_init('https://' . $server . '.api.pvp.net/championmastery/location/' . mb_strtoupper($serverFix) . '/player/' . $summId .'/topchampions' . '?api_key=<API_KEY_HERE>');
   curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
   $result = curl_exec($curl);
   curl_close($curl);
